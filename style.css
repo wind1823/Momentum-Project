@@ -1,0 +1,373 @@
+/*#############################################################
+# +---------------------------------------------------------+ #
+# |                     Main Setting                        | #
+# +---------------------------------------------------------+ #
+#############################################################*/
+
+::placeholder {
+    color: black;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-font{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden{
+    visibility: none;
+    transition: 1s;
+}
+
+.background{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    opacity: 50%;
+}
+
+li:hover{
+    cursor: default;
+    animation: fadein 0.5s;
+    animation-fill-mode: forwards;
+}
+
+li:not(:hover){
+    cursor: default;
+    animation: fadeout 0.5s;
+    animation-fill-mode: forwards;
+}
+
+li.span{
+    display:inline-block;
+    background-color: gray;
+}
+
+button{
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    background: none;
+    border: none;
+}
+
+/*#############################################################
+# +---------------------------------------------------------+ #
+# |                  Momentum Main Setting                  | #
+# +---------------------------------------------------------+ #
+#############################################################*/
+
+#momentum-main{
+    width: 100vw;
+    height: 100vw;
+}
+
+#main-pos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*#############################################################
+# +---------------------------------------------------------+ #
+# |                 Momentum Clock Setting                  | #
+# +---------------------------------------------------------+ #
+#############################################################*/
+
+#time-pos{
+    text-align: center;
+}
+
+#hello-pos{
+    text-align: center;
+}
+
+#hello{
+    font-size: 50px;
+    margin: 0;
+    cursor: default;
+}
+
+#clock{
+    font-size: 150px;
+    margin: 0;
+    cursor: default;
+}
+
+#date-pos{
+    text-align: left;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+#date{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: default;
+}
+
+/*#############################################################
+# +---------------------------------------------------------+ #
+# |                 Momentum Login Setting                  | #
+# +---------------------------------------------------------+ #
+#############################################################*/
+
+#login-pos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#useridAsk{
+    font-size: 40px;
+    margin: 20px;
+}
+
+#username{
+    display: flex;
+    text-align: center;
+    width:700px;
+    height:50px;
+    font-size:50px;
+    outline: none;
+    border: 0;
+    border-bottom: 4px solid;
+    background: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    padding: 20px 12px;
+    opacity: 50%;
+}
+
+#username::after{
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#username:hover{
+    cursor: default;
+    animation: fadein 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#username:not(:hover){
+    cursor: default;
+    animation: fadeout 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*#############################################################
+# +---------------------------------------------------------+ #
+# |                Momentum Weather Setting                 | #
+# +---------------------------------------------------------+ #
+#############################################################*/
+
+#weather-main{
+    position: relative;
+    left: 2vw;
+    top: 1.5vw;
+}
+
+#weather-pos{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 50%;
+}
+
+#weather{
+    text-align: right;
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
+    font-weight: 200;
+}
+
+#weatherimg{
+    text-align: right;
+}
+
+#weatherIcon{
+    filter: invert();
+    height: 20px;
+    padding-top: 5px;
+}
+
+#weather-pos:hover{
+    cursor: default;
+    animation: fadein 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#weather-pos:not(:hover){
+    cursor: default;
+    animation: fadeout 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#weatherimgcon{
+    display: flex;
+}
+
+#weather-conditions{
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+/*#############################################################
+# +---------------------------------------------------------+ #
+# |                       Animations                        | #
+# +---------------------------------------------------------+ #
+#############################################################*/
+
+.fadeinLog{
+    animation: fadeinLogin 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.fadeoutLog{
+    animation: fadeinLogin 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 50%;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+@keyframes fadeintodoadd {
+    from {
+        opacity: 50%;
+    }
+    to {
+        opacity: 80%;
+    }
+}
+
+@keyframes fadeouttodoadd {
+    from {
+        opacity: 80%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+@keyframes fadeinLogin {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeoutLogin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*#############################################################
+# +---------------------------------------------------------+ #
+# |                      Todo Setting                       | #
+# +---------------------------------------------------------+ #
+#############################################################*/
+
+#todo{
+    width: 15vw;
+    position: absolute;
+    right: -0%;
+    bottom: 2%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#todo-add{
+    height: 20px;
+    width:14vw;
+    opacity: 50%;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    cursor: default;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+#todo-add:hover{
+    cursor: default;
+    animation: fadeintodoadd 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#todo-add:not(:hover){
+    cursor: default;
+    animation: fadeouttodoadd 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#todaysToDo{
+    opacity: 50%;
+    font-weight: 400;
+    cursor: default;
+}
+
+#todaysToDo:hover{
+    cursor: default;
+    animation: fadein 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#todaysToDo:not(:hover){
+    cursor: default;
+    animation: fadeout 0.5s;
+    animation-fill-mode: forwards;
+}

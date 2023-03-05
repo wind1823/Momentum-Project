@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;600&family=Noto+Sans+KR:wght@300;500&display=swap');
+  </style>
+</head>
+<body>
+  <div id="momentum-main">
+    <div id="main-pos">
+      <div id="date-pos">
+        <span id="date" class="main-font">Date</span>
+      </div>
+      <div id="time-pos">
+        <h2 id="clock" class="main-font">00:00</h2>
+      </div>
+      <div id="hello-pos">
+        <h3 id="hello" class="main-font">Good</h3>
+      </div>
+    </div>
+    <div id="weather-main">
+      <div id="weather-pos">
+        <div id="weather" class="main-font">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="weatherimgcon">
+          <div id="weatherimg">
+            <img id="weatherIcon">
+          </div>
+          <div id="weather-conditions">
+            <span id="weather-conditions-text" class="main-font"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="background-pos">
+      <div>
+        <img class="background" id="mainBackground">
+      </div>
+    </div>
+    <div id="todo">
+      <form id="todoform">
+        <input type="text" id="todo-add" required placeholder="Write your today's todo" autocomplete="off">
+      </form>
+      <div id="todo-list-main">
+        <ul id="todo-list" class="main-font"></ul>
+      </div>
+      <div>
+        <span id="todaysToDo" class="main-font">🗹 Today's To Do</span>
+      </div>
+    </div>
+  </div>
+  <div id="login-main">
+    <div id="login-pos">
+      <form id="loginform">
+          <h2 id="useridAsk" class="main-font">What is your name?</h2>
+          <input type="text" id="username" maxlength="15" required autocomplete="off">
+          </div>
+      </form>
+      <div id="login-background">
+        <img class="background" id="getmainBackground">
+      </div>
+    </div>
+  </div>
+  <script src="randomBg.js"></script>
+  <script src="weather.js"></script>
+  <script src="todo.js"></script>
+</body>
+</html>
